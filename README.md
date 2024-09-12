@@ -41,7 +41,7 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
 
 ### Linux
 
-1. Download the `.deb` package for Linux from the [releases page](https://github.com/your-repo/releases).
+1. Download the `.deb` package for Linux from the [releases page](https://github.com/DulithaBandaranayake/CaptureTextAi/releases/tag/Linux).
 2. Open a terminal and run the following command to install:
    ```bash
    sudo dpkg -i capture-text-ai-amd64.deb
