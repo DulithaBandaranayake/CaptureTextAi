@@ -1,6 +1,6 @@
 # Capture Text Ai
 
-![Capture Text Ai Logo](path/to/your/logo.png)
+![Capture Text Ai Logo](https://github.com/user-attachments/assets/82f1dd90-5e1b-4092-a3ec-369d0fea680a)
 
 **Developed by Dubu**
 
