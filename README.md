@@ -33,7 +33,7 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
 
 ### Windows
 
-1. Download the installer from the [releases page](https://github.com/your-repo/releases).
+1. Download the installer from the [releases page](https://github.com/DulithaBandaranayake/CaptureTextAi/releases/tag/Windows).
 2. Run the `CaptureTextAi_Setup.exe` file.
 3. Follow the installation instructions.
    - **Note**: Tesseract is already bundled in the setup for Windows.
