@@ -112,6 +112,6 @@ Copyright (c) 2024 DuBu. All rights reserved.
 
 ---
 
-Thank you for using Capture Text Ai! If you encounter any issues, feel free to [open an issue](https://github.com/your-repo/issues).
+Thank you for using Capture Text Ai! If you encounter any issues, feel free to [open an issue](https://github.com/DulithaBandaranayake/CaptureTextAi/issues).
 
 ---
