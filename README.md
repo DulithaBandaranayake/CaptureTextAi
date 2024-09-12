@@ -1,6 +1,7 @@
 # Capture Text Ai
 
-<img src="https://github.com/user-attachments/assets/82f1dd90-5e1b-4092-a3ec-369d0fea680a" alt="Capture Text Ai Logo" width="300">
+<img src="https://github.com/user-attachments/assets/82f1dd90-5e1b-4092-a3ec-369d0fea680a" alt="Capture Text Ai Logo" width="200">
+
 
 **Developed by Dubu**
 
