@@ -15,6 +15,7 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
 
 ## Table of Contents
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Installation](#installation)
   - [Windows](#windows)
   - [Linux](#linux)
@@ -28,6 +29,19 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
   - [Linux](#tesseract-on-linux)
   - [Arch Linux](#tesseract-on-arch-linux)
 - [License](#license)
+
+---
+
+## Screenshots
+
+### Main Application Interface
+<img width="1366" height="768" alt="Screenshot_20250926_124033" src="https://github.com/user-attachments/assets/94bc633b-e35b-461e-8d05-6713bd8c2962" />
+
+### Text Extraction Results
+<img width="1496" height="854" alt="Screenshot_20250926_124053" src="https://github.com/user-attachments/assets/c8e8e6f3-f6bc-426e-9878-a9dbb26fc696" />
+
+### Home
+<img width="374" height="257" alt="Screenshot_20250926_124008" src="https://github.com/user-attachments/assets/c1641350-a8f4-4d1e-9e97-e51134312e19" />
 
 ---
 
