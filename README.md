@@ -2,15 +2,14 @@
 
 <img src="https://github.com/user-attachments/assets/82f1dd90-5e1b-4092-a3ec-369d0fea680a" alt="Capture Text Ai Logo" width="200">
 
+**Developed by DuBu**
 
-**Developed by Dubu**
-
-Capture Text Ai is a simple, user-friendly application that allows you to capture an image and extract the text from it using OCR (Optical Character Recognition). It supports both Windows and Linux, with a setup guide for both platforms below.
+Capture Text Ai is a simple, user-friendly application that allows you to capture an image and extract the text from it using OCR (Optical Character Recognition). It supports Windows, Linux, and Arch Linux, with setup guides for all platforms below.
 
 ## Features
 - Capture screenshots and extract text from images.
 - Easy-to-use interface.
-- Cross-platform support (Windows & Linux).
+- Cross-platform support (Windows, Linux & Arch Linux).
 
 ---
 
@@ -19,12 +18,15 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
 - [Installation](#installation)
   - [Windows](#windows)
   - [Linux](#linux)
+  - [Arch Linux](#arch-linux)
 - [Uninstallation](#uninstallation)
   - [Windows](#uninstall-on-windows)
   - [Linux](#uninstall-on-linux)
+  - [Arch Linux](#uninstall-on-arch-linux)
 - [Tesseract Installation](#tesseract-installation)
   - [Windows](#tesseract-on-windows)
   - [Linux](#tesseract-on-linux)
+  - [Arch Linux](#tesseract-on-arch-linux)
 - [License](#license)
 
 ---
@@ -51,6 +53,27 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
    sudo apt --fix-broken install
    ```
 
+### Arch Linux
+
+The easiest way to install on Arch Linux using AUR:
+
+1. **Using yay (recommended)**:
+   ```bash
+   yay -S capture-text-ai
+   ```
+
+2. **Using paru**:
+   ```bash
+   paru -S capture-text-ai
+   ```
+
+3. **Manual AUR installation**:
+   ```bash
+   git clone https://aur.archlinux.org/capture-text-ai.git
+   cd capture-text-ai
+   makepkg -si
+   ```
+
 ---
 
 ## Uninstallation
@@ -67,52 +90,41 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
    sudo apt remove capture-text-ai
    ```
 
----
+### Uninstall on Arch Linux
 
-## Tesseract Installation
-
-Capture Text Ai uses Tesseract for Optical Character Recognition (OCR). Here’s how to install it:
-
-### Tesseract on Windows
-
-- **No need to install**: Tesseract is bundled in the Windows installer.
-
-### Tesseract on Linux
-
-1. Install Tesseract by running the following command:
+1. Using your AUR helper:
    ```bash
-   sudo apt install tesseract-ocr
+   yay -R capture-text-ai
+   ```
+   
+   Or:
+   ```bash
+   paru -R capture-text-ai
+   ```
+
+2. Using pacman directly:
+   ```bash
+   sudo pacman -R capture-text-ai
    ```
 
 ---
 
 ## License
 
-Capture Text Ai is provided under the following license:
+Capture Text Ai is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
 
-### License Agreement
+### MIT License
 
-Copyright (c) 2024 DuBu. All rights reserved.
+Copyright (c) 2024 Dulitha Bandaranayake
 
-1. **License Grant**  
-   This license permits you to use, install, and run the Capture Text Ai application for personal and commercial purposes. You may not copy, redistribute, or modify the application in any form.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-2. **Restrictions**  
-   - You may not sell, lease, rent, or sublicense the application.  
-   - You may not reverse engineer, decompile, or disassemble the application.  
-   - You may not copy or redistribute the application or its components, except for backup purposes.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-3. **Disclaimer**  
-   The application is provided "as is" without warranty of any kind, either express or implied. The author is not responsible for any damages or losses arising from the use or inability to use the application.
-
-4. **Termination**  
-   This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any term of this license.
-
-5. **Governing Law**  
-   This license shall be governed by and construed in accordance with the laws of Sri Lanka.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
 
-Thank you for using Capture Text Ai! If you encounter any issues, feel free to [open an issue](https://github.com/DulithaBandaranayake/CaptureTextAi/issues).
+Thank you for using Capture Text Ai! If you encounter any issues, feel free to [open an issue](https://github.com/DulithaBandaranayake/capture-text-ai-app/issues).
 
 ---
