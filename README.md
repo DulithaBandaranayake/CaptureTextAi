@@ -4,12 +4,12 @@
 
 **Developed by DuBu**
 
-Capture Text Ai is a simple, user-friendly application that allows you to capture an image and extract the text from it using OCR (Optical Character Recognition). It supports Windows, Linux, and Arch Linux, with setup guides for all platforms below.
+Capture Text Ai is a simple, user-friendly application that allows you to capture an image and extract the text from it using OCR (Optical Character Recognition). It supports Windows, Linux, Arch Linux, and macOS, with setup guides for all platforms below.
 
 ## Features
 - Capture screenshots and extract text from images.
 - Easy-to-use interface.
-- Cross-platform support (Windows, Linux & Arch Linux).
+- Cross-platform support (Windows, Linux, Arch Linux & macOS).
 
 ---
 
@@ -20,14 +20,17 @@ Capture Text Ai is a simple, user-friendly application that allows you to captur
   - [Windows](#windows)
   - [Linux](#linux)
   - [Arch Linux](#arch-linux)
+  - [macOS](#macos)
 - [Uninstallation](#uninstallation)
   - [Windows](#uninstall-on-windows)
   - [Linux](#uninstall-on-linux)
   - [Arch Linux](#uninstall-on-arch-linux)
+  - [macOS](#uninstall-on-macos)
 - [Tesseract Installation](#tesseract-installation)
   - [Windows](#tesseract-on-windows)
   - [Linux](#tesseract-on-linux)
   - [Arch Linux](#tesseract-on-arch-linux)
+  - [macOS](#tesseract-on-macos)
 - [License](#license)
 
 ---
@@ -88,6 +91,39 @@ The easiest way to install on Arch Linux using AUR:
    makepkg -si
    ```
 
+### macOS
+
+1. **Download the macOS package** from the [releases page](https://github.com/DulithaBandaranayake/capture-text-ai-app/releases).
+2. **Install using one of these methods**:
+
+   **Option 1: Direct Installation**
+   - Download `CaptureTextAi.dmg`
+   - Double-click to mount the disk image
+   - Drag CaptureTextAi to Applications folder
+   - **Important**: On first run, right-click the app → "Open" to bypass security warnings
+
+   **Option 2: Using Homebrew** (Recommended for developers)
+   ```bash
+   # Install Homebrew if you don't have it
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
+   # Install from source (when available)
+   brew install capture-text-ai
+   ```
+
+   **Option 3: From Source**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/DulithaBandaranayake/capture-text-ai-app.git
+   cd capture-text-ai-app
+   
+   # Install Python dependencies
+   pip3 install -r requirements.txt
+   
+   # Run directly
+   python3 CaptureTextAi.py
+   ```
+
 ---
 
 ## Uninstallation
@@ -119,6 +155,74 @@ The easiest way to install on Arch Linux using AUR:
 2. Using pacman directly:
    ```bash
    sudo pacman -R capture-text-ai
+   ```
+
+### Uninstall on macOS
+
+1. **If installed via .dmg**:
+   - Open Finder → Applications
+   - Find **Capture Text Ai** and drag to Trash
+   - Empty Trash
+
+2. **If installed via Homebrew**:
+   ```bash
+   brew uninstall capture-text-ai
+   ```
+
+3. **Remove settings** (optional):
+   ```bash
+   rm -rf ~/Library/Preferences/capture-text-ai/
+   rm -rf ~/Library/Application\ Support/capture-text-ai/
+   ```
+
+---
+
+## Tesseract Installation
+
+Capture Text Ai uses Tesseract for Optical Character Recognition (OCR). Here's how to install it:
+
+### Tesseract on Windows
+
+- **No need to install**: Tesseract is bundled in the Windows installer.
+
+### Tesseract on Linux
+
+1. Install Tesseract by running the following command:
+   ```bash
+   sudo apt install tesseract-ocr
+   ```
+
+### Tesseract on Arch Linux
+
+1. Install Tesseract using pacman:
+   ```bash
+   sudo pacman -S tesseract tesseract-data-eng
+   ```
+
+2. For additional languages (optional):
+   ```bash
+   sudo pacman -S tesseract-data-[language]
+   ```
+
+### Tesseract on macOS
+
+1. **Using Homebrew** (recommended):
+   ```bash
+   brew install tesseract
+   ```
+
+2. **Using MacPorts**:
+   ```bash
+   sudo port install tesseract
+   ```
+
+3. **For additional languages**:
+   ```bash
+   # Homebrew
+   brew install tesseract-lang
+   
+   # Or specific languages
+   brew install tesseract --with-all-languages
    ```
 
 ---
